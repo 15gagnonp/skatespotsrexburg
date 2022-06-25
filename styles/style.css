@@ -1,10 +1,14 @@
+.logo  {
+    height: 100px;
+    width: 100px;
+}
 .spots-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
 }
-.spots-img {
+.spots-img, #profilepic{
     height: 400px;
     width: 400px;
 }
