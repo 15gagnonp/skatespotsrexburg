@@ -134,7 +134,9 @@ footer .right {
     display: flex;
     justify-content: flex-end;
 }
-
+footer .right a {
+    background-color: #619B8A;
+}
 footer h2{
     color:#233D4D;
     padding-right: 30px;
