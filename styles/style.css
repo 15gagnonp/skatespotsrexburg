@@ -33,7 +33,7 @@ nav a, footer a {
   padding: 20px;
   text-align: center;
   color: #233D4D;
-  font-size: 30px;
+  font-size: 1.5em;
 
 }
 nav a:hover, footer a:hover {
@@ -45,7 +45,7 @@ nav a:hover, footer a:hover {
 }
 .home-grid .rexburgwelcome p {
     color: #619B8A;
-    font-size: 20px;
+    font-size: 1em;
 }
 .home-grid .orange {
     text-align: center;
@@ -115,7 +115,7 @@ nav a:hover, footer a:hover {
     padding: 5px;
     background-color: #A1C181;
     border: 4px solid #619B8A;
-    font-size: 20px;
+    font-size: 1.5em;
 }
 .button:hover {
     background-color: #FE7F2D;
