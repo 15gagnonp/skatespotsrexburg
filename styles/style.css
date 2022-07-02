@@ -1,6 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kdam+Thmor+Pro&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Noto+Sans:ital@1&family=Poppins:wght@200&display=swap');
+
+
+body {
+    background-color: #233D4D;
+    font-family: Noto Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body .orange {
+    color: #FE7F2D;
+}
 .logo  {
     height: 100px;
     width: 100px;
+}
+header {
+    background-color: #619B8A;
+    
+}
+nav {
+    display: flex;
+    justify-content: flex-start; 
+}
+nav a, footer a {
+  background-color: #A1C181;  
+  color: #233D4D;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  color: #233D4D;
+  font-size: 30px;
+
+}
+nav a:hover, footer a:hover {
+    background-color: #FE7F2D;
+    color: #233D4D;
+}
+.home-grid form {
+    color: #619B8A;
+}
+.home-grid .rexburgwelcome p {
+    color: #619B8A;
+    font-size: 20px;
+}
+.home-grid .orange {
+    text-align: center;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 4fr;
+    align-items: center;
+    background-color: #233D4D;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    column-gap: 10%;
+}
+
+.share-grid {
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+}
+.rexburgwelcome {
+    height: auto;
+    width: auto;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-right: 100px;
+    
+}
+.rexburgimg {
+    width: 800px;
+    height: 480px;
 }
 .spots-grid {
     display: grid;
@@ -12,3 +90,30 @@
     height: 400px;
     width: 400px;
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #619B8A;
+
+}
+footer .left {
+    display: flex;
+    justify-content: flex-start;
+}
+footer .right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer h2{
+    color:#233D4D;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#instagram, #facebook {
+    height: 100px;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
