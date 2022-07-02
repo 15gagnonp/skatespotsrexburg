@@ -112,6 +112,14 @@ nav a:hover, footer a:hover {
     /* make this element invisible until we are ready for it */
     display: none;       
 }
+.share-grid label, .share-grid input {
+    display: flex;
+    justify-content: left;
+}
+.share-grid input {
+    background-color: #A1C181;
+    color: #233D4D;
+}
 .button {
     width: 250px;
     height: 50px;
