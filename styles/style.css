@@ -26,6 +26,7 @@ nav {
     justify-content: flex-start; 
 }
 nav a, footer a {
+  width: 100%;
   background-color: #A1C181;  
   color: #233D4D;
   text-decoration: none;
