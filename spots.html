@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Skatespotsrexburg</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="./images/skatelog.jpeg" class="logo" alt="logo">
-            <a href="./index.html">Home</a>
-            <a href="./spots.html">Spots</a>
-            <a href="./connect.html">Connect</a>
-            <a href="./site-plan.html">Site Plan</a>
-        </nav>
-    </header>
-    <main class="spots-grid">
-        <div class="spot">
-            <img src="./images/cedars(hillbomb).jpeg" class="spots-img" alt="cedars(hillbomb)">
-            <p class="spot-p">This is a pretty mellow parking garage hill bomb. Unfortunatly the elevator is inside so you have to walk up it if its late or the doors are locked, but its pretty nice. It alternates between somewhat steep and pretty flat so you can hit some ticks on your way down. It is the Cedarpoint parking garage.</p>
-        </div>
-        <div class="spot">
-            <img src="./images/classicledge.jpeg" class="spots-img" alt="classicledge">
-            <p class="spot-p">This ledge is pretty buttery compared to some of the other local ledges. Bring some wax just incase because it is always nice to be able to make it slide a little better. It is located right in front of the Paramont movie theaters. It has two ledges that are already waxed, but plenty of ledges that could be waxed and be set up for some awesome ledge lines.</p>
-        </div>
-        <div class="spot">
-            <img src="./images/dropoff.jpeg" class="spots-img" alt="campus dropoff">
-            <p class="spot-p">This drop off spot is located right nex to the I-Center and the heart building on BYU-I campus. It is a pretty small drop, has really nice concrete, and is not too busy. This makes it perfect for learning how to take your tricks down things without being too worried about hurting yourself. It is also a perfect spot for learning how to start taking those same tricks down 3-4 stair flights. </p>
-        </div>
-        <div class="spot">
-            <img src="./images/mannypad.jpeg" class="spots-img" alt="mannypad">
-            <p class="spot-p">This is a little manny pad outside of the Paramount theaters. It is a little tought to hit because of the brick, but it makes that amazing skateboard on brick noise making it perfect for some nice manual clips.</p>
-        </div>
-        <div class="spot">
-            <img src="./images/Northpoint(hillbomb).jpeg" class="spots-img" alt="Northpoint hillbomb">
-            <p class="spot-p">The Northpoint parking garage is the best parking garage in Rexburg. There is a very convienent elevator so you can hit it as many times and not have to walk up. After about 4-5pm the Managment is not around anymore and you don't have to worry about being kicked out. It is a very steady decline so you never end up going super fast making it perfect to get a line of your favorite tricks while going down. The concrete is very smooth and perfect for try out some back and frontside powerslides.</p>
-        </div>
-        <div class="spot">
-            <img src="./images/thecedarsledge.jpeg" class="spots-img" alt="The Cedars Ledge">
-            <p class="spot-p">This ledge is pretty small making it a nice one to be your first street ledge or if you just need a 15-20 minute break from homework. The location makes it very easy to get to from a lot of the apartments near campus. It has not been skated too much so the ledge is still in pretty good shape with out a lot of chips making it feel and slide a lot like a skate park ledge. The only hard part about this ledge is the giant green electrical unit and sign post right in next to it. </p>
-        </div>
-        <div class="spot">
-            <img src="./images/thepinesledge.jpeg" class="spots-img" alt="The Pines ledge">
-            <p class="spot-p">This ledge is located right between the in and out car paths to the pines. The ledge it fairly tall and has been skated a lot making it pretty crusty, but still a great option when trying to take your ledge tricks to the next level.</p>
-        </div>
 
-    </main>
-    <footer> 
-
-        <div class="left">
-            <h2>Skatespotsrexburg © 2022-Preston</h2>
-        
-        <a href="index.html">Home</a>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./spots.html">Spots</a>
         <a href="./connect.html">Connect</a>
-        </div>
-
-        <div class="right">
-        <a href="https://www.instagram.com/gagnops/" target="_blank"> 
-            <img id="instagram" src="./images/instagramicon.png" alt="instagram">
-        </a>           
-       <a href="https://www.facebook.com/preston.gagnon.7/" target="_blank">
-        <img id="facebook" src="./images/facebookicon.png" alt="facebook">
-       </a>
+        <a href="./site-plan.html">Site Plan</a>
+      </div>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles/style.css">
+            <title>Skatespotsrexburg</title>
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <img src="./images/skatelog.jpeg" class="logo" alt="logo">
+                    <a href="./index.html">Home</a>
+                    <a href="./spots.html">Spots</a>
+                    <a href="./connect.html">Connect</a>
+                    <a href="./site-plan.html">Site Plan</a>
+                </nav>
+            </header>
+                <!-- Use any element to open the sidenav -->
+                <span id="navbutton" onclick="openNav()">Side Nav</span>
+            <main class="spots-grid">
+                <div class="spot">
+                    <img src="./images/cedars(hillbomb).jpeg" class="spots-img" alt="cedars(hillbomb)">
+                    <p class="spot-p">This is a pretty mellow parking garage hill bomb. Unfortunatly the elevator is inside so you have to walk up it if its late or the doors are locked, but its pretty nice. It alternates between somewhat steep and pretty flat so you can hit some ticks on your way down. It is the Cedarpoint parking garage.</p>
+                </div>
+                <div class="spot">
+                    <img src="./images/classicledge.jpeg" class="spots-img" alt="classicledge">
+                    <p class="spot-p">This ledge is pretty buttery compared to some of the other local ledges. Bring some wax just incase because it is always nice to be able to make it slide a little better. It is located right in front of the Paramont movie theaters. It has two ledges that are already waxed, but plenty of ledges that could be waxed and be set up for some awesome ledge lines.</p>
+                </div>
+                <div class="spot">
+                    <img src="./images/dropoff.jpeg" class="spots-img" alt="campus dropoff">
+                    <p class="spot-p">This drop off spot is located right nex to the I-Center and the heart building on BYU-I campus. It is a pretty small drop, has really nice concrete, and is not too busy. This makes it perfect for learning how to take your tricks down things without being too worried about hurting yourself. It is also a perfect spot for learning how to start taking those same tricks down 3-4 stair flights. </p>
+                </div>
+                <div class="spot">
+                    <img src="./images/mannypad.jpeg" class="spots-img" alt="mannypad">
+                    <p class="spot-p">This is a little manny pad outside of the Paramount theaters. It is a little tought to hit because of the brick, but it makes that amazing skateboard on brick noise making it perfect for some nice manual clips.</p>
+                </div>
+                <div class="spot">
+                    <img src="./images/Northpoint(hillbomb).jpeg" class="spots-img" alt="Northpoint hillbomb">
+                    <p class="spot-p">The Northpoint parking garage is the best parking garage in Rexburg. There is a very convienent elevator so you can hit it as many times and not have to walk up. After about 4-5pm the Managment is not around anymore and you don't have to worry about being kicked out. It is a very steady decline so you never end up going super fast making it perfect to get a line of your favorite tricks while going down. The concrete is very smooth and perfect for try out some back and frontside powerslides.</p>
+                </div>
+                <div class="spot">
+                    <img src="./images/thecedarsledge.jpeg" class="spots-img" alt="The Cedars Ledge">
+                    <p class="spot-p">This ledge is pretty small making it a nice one to be your first street ledge or if you just need a 15-20 minute break from homework. The location makes it very easy to get to from a lot of the apartments near campus. It has not been skated too much so the ledge is still in pretty good shape with out a lot of chips making it feel and slide a lot like a skate park ledge. The only hard part about this ledge is the giant green electrical unit and sign post right in next to it. </p>
+                </div>
+                <div class="spot">
+                    <img src="./images/thepinesledge.jpeg" class="spots-img" alt="The Pines ledge">
+                    <p class="spot-p">This ledge is located right between the in and out car paths to the pines. The ledge it fairly tall and has been skated a lot making it pretty crusty, but still a great option when trying to take your ledge tricks to the next level.</p>
+                </div>
         
-        <img src="" alt="">
-        </div>
-    </footer>
-    
-</body>
+            </main>
+            <footer> 
+        
+                <div class="left">
+                    <h2>Skatespotsrexburg © 2022-Preston</h2>
+                
+                <a href="index.html">Home</a>
+                <a href="./connect.html">Connect</a>
+                </div>
+        
+                <div class="right">
+                <a href="https://www.instagram.com/gagnops/" target="_blank"> 
+                    <img id="instagram" src="./images/instagramicon.png" alt="instagram">
+                </a>           
+               <a href="https://www.facebook.com/preston.gagnon.7/" target="_blank">
+                <img id="facebook" src="./images/facebookicon.png" alt="facebook">
+               </a>
+                
+                <img src="" alt="">
+                </div>
+            </footer>
+            
+        </body>
+      </div>
+      <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
 </html>
