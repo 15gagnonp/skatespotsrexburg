@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Skatespotsrexburg</title>
-</head>
-<body>
-    <header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./spots.html">Spots</a>
+        <a href="./connect.html">Connect</a>
+        <a href="./site-plan.html">Site Plan</a>
+      </div>
+<div id="main">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Skatespotsrexburg</title>
+    </head>
+    <body>
+        <header>
+            
+            <nav>
+                <img src="./images/skatelog.jpeg" class="logo" alt="logo">
+                <a href="./index.html">Home</a>
+                <a href="./spots.html">Spots</a>
+                <a href="./connect.html">Connect</a>
+                <a href="./site-plan.html">Site Plan</a>
+            </nav>
+        </header>
+        <!-- Use any element to open the sidenav -->
+        <span id="navbutton" onclick="openNav()">Side Nav</span>
+        <main class="connecthome-grid"> 
+            <div> 
+                <img src="./images/profilepic.jpeg" class="profilepic" alt="Picture of me">
+                <p>This is Preston Gagnon. He has been in Rexburg for a total of 3 and a half years. He orignally comes from Georgia where he graduated highschool, but he did not start skateboarding until he come to Idaho. Preston started skating in 2018. He skated for two and a half years before leaving on a mission to Pocatello, Idaho and later Berlin, Germany. Preston returned home in Febuary of 2022 and has been skating consistantly since being back. He loves skating ledges, rails, and stairs (mostly 4-5 stairs). "Rexburg is actually a great place for skateboarindg! The campus is on a mellow hill so hill bombs witht the homies through campus is always a good time. There are plenty of good spots on and off of BYU-I campus. There are also plenty of Skateparks around; including one in Rexburg, Rigby, St. Anthonys, and Idaho Falls." -Preston </p>
+            </div>
+            <div> 
+                <img src="./images/Kelvin.JPG" class="profilepic" alt="Profile pic">
+                <p>I started skating my sophomore year of high school, about 2018, I did it because I had some friends who were into it and it seemed fun. I love skating something big with my friends and pushing them to do it with me.</p>
+            </div>
+            <div>       
+                <img src="./images/George.jpeg" class="profilepic" alt="Profile pic">
+                <p>Skating is a sport where your progress is completely independent. Sports like this have always interested me, like wrestling and track. So skating was just another outlet that helped me to progress in reflecting my efforts.
+
+                    Skating then became something much more. It has increased my pallets for music and art. As well as connecting me to some of my best friends.</p>
+            </div>
         
-        <nav>
-            <img src="./images/skatelog.jpeg" class="logo" alt="logo">
-            <a href="./index.html">Home</a>
-            <a href="./spots.html">Spots</a>
-            <a href="./connect.html">Connect</a>
-            <a href="./site-plan.html">Site Plan</a>
-        </nav>
-    </header>
-    <main class="connecthome-grid"> 
-       <img src="./images/profilepic.jpeg" id="profilepic" alt="Picture of me">
-       <p>This is Preston Gagnon. He has been in Rexburg for a total of 3 and a half years. He orignally comes from Georgia where he graduated highschool, but he did not start skateboarding until he come to Idaho. Preston started skating in 2018. He skated for two and a half years before leaving on a mission to Pocatello, Idaho and later Berlin, Germany. Preston returned home in Febuary of 2022 and has been skating consistantly since being back. He loves skating ledges, rails, and stairs (mostly 4-5 stairs). "Rexburg is actually a great place for skateboarindg! The campus is on a mellow hill so hill bombs witht the homies through campus is always a good time. There are plenty of good spots on and off of BYU-I campus. There are also plenty of Skateparks around; including one in Rexburg, Rigby, St. Anthonys, and Idaho Falls." -Preston </p>
-    </main>
-    <footer> 
 
-        <h2>Skatespotsrexburg © 2022-Preston</h2>
-        <button src="index.html">Home</button>
-        <button src="./connect.html">Connect</button>
+        </main>
+        <footer> 
 
-    </footer>
-    
-</body>
+            <h2>Skatespotsrexburg © 2022-Preston</h2>
+            <button src="index.html">Home</button>
+            <button src="./connect.html">Connect</button>
+
+        </footer>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+        
+    </body>
+</div>
 </html>

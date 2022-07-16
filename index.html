@@ -1,82 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Skatespotsrexburg</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="./images/skatelog.jpeg" class="logo" alt="logo">
-            <a href="./index.html">Home</a>
-            <a href="./spots.html">Spots</a>
-            <a href="./connect.html">Connect</a>
-            <a href="./site-plan.html">Site Plan</a>
-        </nav>
-    </header>
-    <main class="home-grid"> 
-        <div class="share-grid">  
-            <h1 class="orange">Share your favorite spots</h1>  
-            
-            <form action="/action_page.php">
-            <label for="skatespotname">Skate Spot Name:</label>
-            <input type="text" name="skatespotname" id="skatespotname">
-            <br>
-            <label for="address">Address:</label>
-            <input type="text" name="address" id="address">
-            <br>
-            <button class="button" type="submit">Share your Spot</button>
-            </form>
-            <div id="feedback"></div> 
-            
-        </div>
 
-        <div class="rexburgwelcome">
-            <img class="rexburgimg" src="./images/Rexburg photo_11zon.jpeg" alt="picture of rexburg">
-            <h1 class="orange">Rexburg Skate Spots</h1>
-            <p>This website helps you find the best skate spots right when you get to a new area or even before you arrive! Have you ever moved to or visited a new city and didn’t know the best local spots?  At skateboaringspotsrexburg.com we provide an ever-increasing list of good places to skate in and around Rexburg Idaho. All these things will help you quickly find the type of street obstacle you are looking for at your skill level. The only things you will need will be your skateboard and maybe some wax. A lot of the spots are already pretty well waxed up, but you never know with street spots. </p>
-        </div>
-
-    </main>
-    <footer> 
-        <div class="left">
-            <h2>Skatespotsrexburg © 2022-Preston</h2>
-        
-        <a href="index.html">Home</a>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./spots.html">Spots</a>
         <a href="./connect.html">Connect</a>
-        </div>
+        <a href="./site-plan.html">Site Plan</a>
+      </div>
+<div id="main">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Skatespotsrexburg</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="./images/skatelog.jpeg" class="logo" alt="logo">
+                <a href="./index.html">Home</a>
+                <a href="./spots.html">Spots</a>
+                <a href="./connect.html">Connect</a>
+                <a href="./site-plan.html">Site Plan</a>
+            </nav>
+        </header>
+        <!-- Use any element to open the sidenav -->
+        <span id="navbutton" onclick="openNav()">Side Nav</span>
+        <main class="home-grid"> 
+            <div class="share-grid">  
+                <h1 class="orange">Share your favorite spots</h1>  
+                
+                <form action="/action_page.php">
+                <label for="skatespotname">Skate Spot Name:</label>
+                <input type="text" name="skatespotname" id="skatespotname">
+                <br>
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address">
+                <br>
+                <button class="button" type="submit">Share your Spot</button>
+                </form>
+                <div id="feedback"></div> 
+                
+            </div>
 
-        <div class="right">
-        <a href="https://www.instagram.com/gagnops/" target="_blank"> 
-            <img id="instagram" src="./images/instagramicon.png" alt="instagram">
-        </a>           
-       <a href="https://www.facebook.com/preston.gagnon.7/" target="_blank">
-        <img id="facebook" src="./images/facebookicon.png" alt="facebook">
-       </a>
-        
-        <img src="" alt="">
-        </div>
+            <div class="rexburgwelcome">
+                <img class="rexburgimg" src="./images/Rexburg photo_11zon.jpeg" alt="picture of rexburg">
+                <h1 class="orange">Rexburg Skate Spots</h1>
+                <p>This website helps you find the best skate spots right when you get to a new area or even before you arrive! Have you ever moved to or visited a new city and didn’t know the best local spots?  At skateboaringspotsrexburg.com we provide an ever-increasing list of good places to skate in and around Rexburg Idaho. All these things will help you quickly find the type of street obstacle you are looking for at your skill level. The only things you will need will be your skateboard and maybe some wax. A lot of the spots are already pretty well waxed up, but you never know with street spots. </p>
+            </div>
 
-    </footer>
-    <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Thank you for sharing your favorite spot! We are stoked to skate it and add it to the site!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
-    </script>   
-</body>
+        </main>
+        <footer> 
+            <div class="left">
+                <h2>Skatespotsrexburg © 2022-Preston</h2>
+            
+            <a href="index.html">Home</a>
+            <a href="./connect.html">Connect</a>
+            </div>
+
+            <div class="right">
+            <a href="https://www.instagram.com/gagnops/" target="_blank"> 
+                <img id="instagram" src="./images/instagramicon.png" alt="instagram">
+            </a>           
+        <a href="https://www.facebook.com/preston.gagnon.7/" target="_blank">
+            <img id="facebook" src="./images/facebookicon.png" alt="facebook">
+        </a>
+            
+            <img src="" alt="">
+            </div>
+
+        </footer>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+                // stop the form from doing the default action.
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Thank you for sharing your favorite spot! We are stoked to skate it and add it to the site!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+                // add a class to move everything down so our message doesn't cover it.
+                document.body.classList.toggle('moveDown');
+            });
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>   
+    </body>
+</div>
 </html>
